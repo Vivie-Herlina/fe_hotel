@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f4e8be; /* Warna latar belakang navbar */
+}
+
+.logo img {
+    height: 50px; /* Ukuran logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.nav-links a:hover {
+    color: #AD5567; /* Warna saat hover */
+}
+
+.login-btn {
+    background-color: #AD5567;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Menghilangkan underline */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.login-btn {
+    background-color: #AD5567;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box div {
+    position: relative;
+}
+
+.search-box img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.search-box input {
+    padding: 10px 10px 10px 40px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #55AD9B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: left; 
+    padding-left: 30px; 
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.images img {
+    width: calc(33.333% - 40px); /* Membagi 3 kolom dengan margin */
+    max-width: 100%; /* Membatasi gambar agar tetap responsif */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tambahan untuk memastikan gambar diatur dalam dua baris */
+.images img:nth-child(1), 
+.images img:nth-child(2), 
+.images img:nth-child(3) {
+    margin-bottom: 20px; /* Memberikan jarak antar baris */
+}
+
+
+/* CSS untuk image-below-search */
+.image-below-search {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styling untuk gambar */
+.image-below-search img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian teks overlay */
+.text-overlay {
+    position: relative;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.overlay-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overlay-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #4F6F52; /* Ganti dengan warna sesuai gambar */
+    color: #ffffff; /* Warna teks */
+    padding: 40px 20px 20px 20px; /* Padding untuk footer */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Flex-wrap untuk responsif */
+}
+
+.footer-left {
+    flex: 1;
+    padding-right: 20px; /* Jarak kanan */
+}
+
+.footer-logo {
+    width: 150px; /* Atur ukuran logo sesuai kebutuhan */
+}
+
+.footer-links {
+    flex: 1; /* Membagi ruang secara merata */
+    margin: 0 20px; /* Jarak antar kolom */
+}
+
+.footer-links h3 {
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Menghilangkan bullet */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.footer-links li {
+    margin-bottom: 5px; /* Jarak antar link */
+}
+
+.footer-links a {
+    text-decoration: none; /* Menghilangkan underline */
+    color: #ffffff; /* Warna link */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline saat hover */
+}
+
+.footer-social {
+    flex: 1;
+    text-align: right; /* Rata kanan */
+}
+
+.footer-social h3 {
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+.footer-social a {
+    margin-left: 10px; /* Jarak antar ikon */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px; /* Jarak atas footer bottom */
+}
+
+.footer-bottom p {
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+    color: #ddd; /* Warna teks */
+    text-align: left;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Tok Dalang Homestay</title>
+    <!-- Link to Font Awesome for the eye icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_sign_up.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/tok-dalang-homestay-high-resolution-logo-transparent (3).png" alt="Tok Dalang Homestay Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+        <a href="login.html" class="login-btn">Log in</a>
+    </nav>
+
+    <!-- Sign Up Section -->
+    <div class="container">
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <form action="submit_signup.html" method="POST">
+                <label for="fullname">Fullname</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Your Fullname" required>
+
+                <label for="email">Email/Phone Number</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email/Phone Number" required>
+
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('password')"></i>
+                </div>
+
+            
+                <label for="confirm-password">Confirmation Password</label>    
+                <div class="password-container">
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Enter Your Password" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('confirm-password')"></i>
+                </div>
+                
+
+                <p>Sudah Punya Akun? <a href="login.html">Login</a></p>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="logo-container">
+            <img src="img/tok-dalang-homestay-high-resolution-logo-transparent (3).png" alt="Tok Dalang Homestay Logo">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Tok Dalang Homestay. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function togglePassword(id) {
+            var passwordField = document.getElementById(id);
+            var icon = passwordField.nextElementSibling;
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>
